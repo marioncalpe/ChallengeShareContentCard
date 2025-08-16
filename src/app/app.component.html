@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="popup">
+    <div class="title">
+      Share this Challenge
+    </div>
+    <div class="social">
+      <div (click)="shareOnTwitter()">
+        <img src="/assets/x-2.svg" />
+      </div>
+      <div (click)="shareOnLink()">
+        <img src="assets/linkedin-icon-1.svg"/>
+      </div>
+      <div (click)="shareOnFacebook()">
+        <img src="/assets/fb-2.svg"/>
+      </div>
+      <!-- <div (click)="shareOnPinterest()">
+        <img src="/assets/instagram-2016-5.svg"/>
+      </div> -->
+      <div (click)="shareOnPinterest()">
+        <img src="/assets/pinterest-4.svg"/>
+      </div>
+      <div (click)="shareOnTelegram()">
+        <img src="/assets/telegram-alt-svgrepo-com.svg"/>
+      </div>
+    </div>
+    <div class="link">
+      <div>or copy link</div>
+      <div class="url">
+        <input type="url" [value]="shareUrl" readonly style="width:80%;">
+        <button (click)="copyToClipboard(shareUrl)">copy</button>
+      </div>
+    </div>
+  </div>
+</div>
