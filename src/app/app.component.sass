@@ -13,6 +13,7 @@
         border-radius: 40px
         padding: 3em 4em 3em 4em
         height: 30%
+        box-shadow: 10px 10px 1px #caaaa0
         .title
             font: bold 32px Mulish, sans-serif
         .social
@@ -20,13 +21,16 @@
             gap: 36px
             div
                 padding: 22px 
+                border: 1px solid transparent
                 border-radius: 50%
                 fill: #333
                 background-color: #D9D9D9
+                cursor: pointer
                 img
                     width: 30px
                     height: 30px
-                    
+            div:hover
+                border-color: black 
         .link
             font: 600 18px Mulish, sans-serif
             .url
@@ -49,4 +53,5 @@
                     border: none
                     background-color: transparent
                     font: bold 16px Mulish, sans-serif
+                    cursor: pointer
                     
